@@ -13,9 +13,7 @@ BEGIN
    
     WHILE (i < T.length ) DO
         s := s + T[i]*T2[i];
-    END_WHILE
- 
-     ;
+    END_WHILE ;
 END
 
 
@@ -31,6 +29,4 @@ BEGIN
                 Write ('the two vectors are not orthogonal')
 
             END_IF
-        
-    
 END
