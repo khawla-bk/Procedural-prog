@@ -1,0 +1,35 @@
+FUNCTION dotproduct() : INTEGER
+VAR
+    
+    T: ARRAY_OF INTEGER;
+    T2: ARRAY_OF INTEGER;
+    s, i :INTEGER := 0;
+
+
+BEGIN
+    IF (T.length <> T2.length) THEN
+        Write ('Wrong')
+    END_IF
+   
+    WHILE (i < T.length ) DO
+        s = s + T[i]*T2[i];
+    END_WHILE
+    
+END
+
+
+ALGORITHM dotprodcheckpoint
+
+BEGIN
+    read(T)
+    read(T2)
+    s := dotproduct(T,T2);
+            IF (s=0) THEN
+                Write ('The two vectors are orthogonal')
+            ELSE
+                Write ('The two vectors are not orthogonal')
+
+            END_IF
+        
+    
+END
